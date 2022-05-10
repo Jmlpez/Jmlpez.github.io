@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Curriculum</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="main-header__title">Jesús Manuel López Ponce</h1>
+            <strong>Estudiante</strong>
+        </header>
+        <main class="main">
+            <article class="main-article">
+                <section class="section-container">
+                    <h3 class="section-title">Perfil Profesional</h3>
+                    <p class="section-info">
+                        Entuasiasta del desarrollo de software y del
+                        autoaprendizaje. Experiencia en la creación y desarrollo
+                        de sitios web en la parte del FrontEnd. Capaz de
+                        autogestión eficaz en proyectos independientes. Buenas
+                        habilidades de colaboración dentro de un equipo. Aporto
+                        una actitud positiva y la voluntad y motivación para
+                        aprender nuevos programas.
+                    </p>
+                </section>
+                <section class="section-container">
+                    <h3 class="section-title">Formación</h3>
+                    <strong>Universidad de Oriente</strong>
+                    <span class="school-time">noviembre 2021 - julio 2024</span>
+                    <p class="section-info">
+                        Estudiando Ciencias de la Computacion, actualmente
+                        cursando el 2do año, y con buenos resultados hasta el
+                        momento.
+                    </p>
+                </section>
+                <section class="section-container">
+                    <h3 class="section-title">Prácticas</h3>
+                    <p class="section-info">
+                        Me desempeñé como desarrollador FrontEnd, desarrollando
+                        toda la parte visual de un sitio web de venta de
+                        mascotas en las Tunas. Todo lo hice desde cero, sin usar
+                        ningún framework de desarrollo de FrontEnd como React,
+                        Angular o Vue.
+                    </p>
+                </section>
+            </article>
+            <aside class="aside-bar">
+                <section class="aside-section">
+                    <h4 class="aside-section__title">Datos Personales</h4>
+                    <ul class="aside-list">
+                        <li class="aside-list__item">
+                            <a href="tel:+5356752081"> 56752081</a>
+                        </li>
+                        <li class="aside-list__item">
+                            <a href="mailto: jmlopezponce@gmail.com">
+                                jmlopezponce@gmail.com</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+                <section class="aside-section">
+                    <h4 class="aside-section__title">Tecnologías</h4>
+                    <ul class="aside-list">
+                        <li class="aside-list__item">HTML, CSS & JavaScript</li>
+                        <li class="aside-list__item">C++, Qt</li>
+                        <li class="aside-list__item">
+                            Diseño: Figma, Adobe Ilustrator
+                        </li>
+                        <li class="aside-list__item">Git</li>
+                        <li class="aside-list__item">Lógica de Software</li>
+                        <li class="aside-list__item">Comunicación</li>
+                        <li class="aside-list__item">Adaptabilidad</li>
+                    </ul>
+                </section>
+                <section class="aside-section">
+                    <h4 class="aside-section__title">Idiomas</h4>
+                    <ul class="aside-list">
+                        <li class="aside-list__item">
+                            Inglés
+                            <div class="progress-bar-back">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </main>
+
+        <section class="gallery">
+            <h3 class="gallery-title">Fotos de projectos</h3>
+            <ul class="gallery-container">
+                <li class="gallery-item">
+                    <img src="/imgs/p1.jpg" alt="" />
+                </li>
+                <li class="gallery-item"><img src="/imgs/p2.jpg" alt="" /></li>
+                <li class="gallery-item"><img src="/imgs/p3.jpg" alt="" /></li>
+                <li class="gallery-item"><img src="/imgs/p4.jpg" alt="" /></li>
+                <li class="gallery-item">
+                    <img src="/imgs/2048.png" alt="" />
+                </li>
+                <li class="gallery-item">
+                    <img src="/imgs/2048-3.png" alt="" />
+                </li>
+                <li class="gallery-item">
+                    <img src="/imgs/e1.png" alt="" />
+                </li>
+                <li class="gallery-item">
+                    <img src="/imgs/e2.png" alt="" />
+                </li>
+            </ul>
+        </section>
+        <div id="modal-back" class="modal-back">
+            <div class="modal">
+                <button id="leftBtn" class="move-gallery">
+                    <img src="imgs/play.svg" alt="" />
+                </button>
+                <img
+                    id="modal-img"
+                    class="modal-img"
+                    src="/imgs/p1.jpg"
+                    alt=""
+                />
+                <button id="rightBtn" class="move-gallery">
+                    <img src="imgs/play.svg" alt="" />
+                </button>
+            </div>
+            <img
+                class="close-modal"
+                id="close-modal"
+                src="imgs/close-round.png"
+            />
+        </div>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>

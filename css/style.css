@@ -18,17 +18,36 @@ body{
 
 .main-header{
     margin: 1rem auto;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
 }
 
 .main-header__title{
     font-size: 2rem;
 }
 
-.main-header strong{
+.photo{
+    display: inline-block;
+    text-align: center;
+}
+
+.photo-container{
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-container img{
+    width: 160px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.photo strong{
     font-size: 1rem;
     color: rgba(20, 20, 20, 0.8);
 }
+
 
 .main-article{
     width: auto;
@@ -196,6 +215,10 @@ body{
 }
 
 @media screen and (min-width: 640px) {
+    .main-header{
+        text-align: left;
+    }
+    
     .gallery-item{
         width: 250px;
     }

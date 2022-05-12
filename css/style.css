@@ -38,8 +38,8 @@ body{
 }
 
 .photo-container img{
-    width: 160px;
-    height: 180px;
+    /* width: 160px;
+    height: 180px; */
     border-radius: 50%;
 }
 

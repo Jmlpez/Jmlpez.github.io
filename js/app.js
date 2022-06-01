@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const showProject = (i) => {
     if (idx == i) return;
     projects[idx].classList.add("hide");
+    btns[idx].classList.remove("btn-item__active");
     idx = i;
     projects[idx].classList.remove("hide");
+    btns[idx].classList.add("btn-item__active");
+
     gallery.style.height = projects[idx].clientHeight + "px";
 };
 

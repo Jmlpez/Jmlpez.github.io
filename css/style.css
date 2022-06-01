@@ -213,6 +213,15 @@ body {
     font-size: 0.9rem;
     margin: 0.7rem;
     padding: 1rem;
+    border: 2px solid #1b212f;
+    transition: all 0.4s ease;
+    min-width: 13rem;
+    text-align: center;
+}
+
+.btn-item__active {
+    color: #1b212f;
+    background: #fff;
 }
 
 .gallery {
@@ -279,6 +288,7 @@ body {
     }
     .btn-item {
         padding: 1rem 1.5rem;
+        min-width: auto;
     }
     .project {
         flex-direction: row;

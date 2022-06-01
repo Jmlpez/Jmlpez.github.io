@@ -1,46 +1,25 @@
-const modalBack = document.querySelector("#modal-back");
-const modalImg = document.querySelector("#modal-img");
-const closeModal = document.querySelector("#close-modal");
+const btns = document.querySelectorAll(".btn-item"),
+    gallery = document.querySelector(".gallery"),
+    projects = document.querySelectorAll(".project");
 
-const arrImg = document.querySelectorAll(".gallery-item > img");
-const leftBtn = document.querySelector("#leftBtn");
-const rightBtn = document.querySelector("#rightBtn");
+let idx = 0;
 
-
-let currentIdx = 0;
-
-const setPicture = ()=>{
-    modalImg.src = arrImg[currentIdx].src;
-}
-
-closeModal.addEventListener("click",()=>{
-    modalBack.classList.remove("show-modal");
-})
-
-arrImg.forEach((img, idx)=>{
-    img.addEventListener("click", ()=>{
-        modalBack.classList.add("show-modal");
-        currentIdx = idx;
-        setPicture();
-    })
+document.addEventListener("DOMContentLoaded", () => {
+    gallery.style.height = projects[idx].clientHeight + "px";
 });
 
-const moveLeft = ()=>{
-    currentIdx--;
-    if(currentIdx < 0)currentIdx = arrImg.length-1;
-    setPicture();
-}
+const showProject = (i) => {
+    if (idx == i) return;
+    projects[idx].classList.add("hide");
+    idx = i;
+    projects[idx].classList.remove("hide");
+    gallery.style.height = projects[idx].clientHeight + "px";
+};
 
-const moveRight = ()=>{
-    currentIdx++;
-    if(currentIdx == arrImg.length)currentIdx = 0;
-    setPicture();
-}
-
-leftBtn.addEventListener("click", ()=>{
-    moveLeft();
-});
-
-rightBtn.addEventListener("click", ()=>{
-    moveRight();
+btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        let i = 0;
+        for (; i < btns.length && btns[i] !== btn; i++);
+        showProject(i);
+    });
 });

@@ -4,9 +4,12 @@ Principal:
 Complementary:
 #2f1b21
 #212f1b
+<i class="fa fa-graduation-cap"></i>
+<i class="fa fa-user-plus"></i>
+<i class="fa fa-briefcase"></i>
+<i class="fa fa-suitcase"></i>
 */
 
-/*<i class="fa fa-graduation-cap"></i>*/
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +27,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    background-color: #e4ded0;
 }
 
 .photo {
@@ -105,12 +109,22 @@ body {
     font-style: italic;
 }
 
-.section-title {
-    font-size: 1.5rem;
+.section-header {
     background: #1b212f;
     color: #fff;
     border-radius: 3px;
     padding-left: 2%;
+}
+.section-header__title {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 2%;
+    vertical-align: middle;
+}
+
+.section-header i {
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 .section__article {

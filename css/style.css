@@ -285,6 +285,7 @@ body {
     }
     .btn-list {
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .btn-item {
         padding: 1rem 1.5rem;
@@ -292,6 +293,7 @@ body {
     }
     .project {
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .gallery-item {
         width: 20%;
